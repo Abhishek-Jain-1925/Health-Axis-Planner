@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.signup-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(10, 0, 0, 0.1);
+  background-color: #f8f3f3;
+  border: 0.5px solid grey;
+  animation: fadeInUp 0.5s ease;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #888;
+}
+
+label {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  color: #888;
+  font-size: 16px;
+  pointer-events: none;
+  transition: top 0.3s, font-size 0.3s, color 0.3s;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: 0;
+  font-size: 12px;
+  color: #888;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #6e6767;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #999;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(10, 0, 0, 0.1);
+  background-color: #f8f3f3;
+  border: 0.5px solid grey;
+  animation: fadeInUp 0.5s ease;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #6e6767;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+input {
+  width: calc(100% - 20px); /* Adjusting width for input and label */
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #f8f3f3;
+}
+
+input:focus {
+  border-color: #888;
+}
+
+label {
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  color: #888;
+  font-size: 16px;
+  pointer-events: none;
+  transition: top 0.3s, font-size 0.3s, color 0.3s;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: 8px;
+  font-size: 12px;
+  color: #6e6767;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #6e6767;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #999;
+  transform: translateY(-2px) scale(1.02);
+}
+
+button:active {
+  transform: translateY(1px) scale(1);
+}
+
+.active {
+  top: 8px;
+  font-size: 12px;
+  color: #6e6767;
+}
+/* Style for select option */
+select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #f8f3f3;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select:focus {
+  border-color: #888;
+}
+
+select + label {
+  position: absolute;
+  top: 18px;
+  left: 10px;
+  color: #888;
+  font-size: 16px;
+  pointer-events: none;
+  transition: top 0.3s, font-size 0.3s, color 0.3s;
+}
+
+select:focus + label,
+select:not(:placeholder-shown) + label {
+  top: 8px;
+  font-size: 12px;
+  color: #6e6767;
+}
+
+/* Arrow for select option */
+select + label::after {
+  content: "\25BC"; /* Unicode for downward arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+
+select:focus + label::after {
+  color: #6e6767;
+}
